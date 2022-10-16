@@ -17,13 +17,17 @@ return randomItem;
 function getUserChoice()
 {
 
-    const userChoice= prompt("Please enter your choice");
-    if(choiceArray.includes(userChoice))
+    const userChoice= prompt("Please enter your choice") ;
+
+    const convertedUserChoice=userChoice.toLowerCase();
+   
+     
+    if(choiceArray.includes(convertedUserChoice))
     {   //console.log(userChoice);
-        return userChoice;
+        return convertedUserChoice;
         
     }
-    else if(userChoice==''){
+    else if(convertedUserChoice==''){
 
     console.log("please enter a value");
     }
