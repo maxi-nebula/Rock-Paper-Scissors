@@ -99,12 +99,20 @@ function beginGame()
        {
         uW=uW+1;
         
+       }else if(winFactor==0){
+        dW=dW+1;
        }
 
 
-function decideWinner(C,U)
+function decideWinner(C,U,D)
 {
-if(C>U)
+
+    if((D==1 && C==U)||(D==3 && C==U))
+
+
+    {console.log("------------ITS A DRAW!!LETS TRY AGAIN-----------------");
+}
+else if(C>U)
 
 {
 
@@ -115,13 +123,14 @@ else if(U>C)
 
     console.log("**************CONGRATULATIONS!!YOU BEAT ME**********");
 }
+
 }
                  
 
 }
 
 
-decideWinner(cW,uW);
+decideWinner(cW,uW,dW);
 
 
 }
