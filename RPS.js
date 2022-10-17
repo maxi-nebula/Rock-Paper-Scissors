@@ -61,52 +61,39 @@ function playRound(cC,uI)
         
         
     }
+    
    
 }
 
+
+
 //const winFactor =playRound(computerChoice,userInput);
 //console.log(winFactor);
-
-
+ 
 function beginGame()
 {
     for(i=0;i<5;i++)
     
     {
 
-        let cW=0,uW=0, dW=0;
+      
         const computerChoice=getComputerChoice(choiceArray);
         const userInput=getUserChoice();
         console.log(userInput);
-        const winFactor=playRound(computerChoice,userInput);
+        const winFactor= playRound(computerChoice,userInput);
+        
 
-          function decideWinner(wF)
-          {
-           if(wF==1)
-           {
+       
+             
 
-            cW=cW+1;
-           }else if(wF==-1)
-           {
-
-            uW=uW+1;
-           }
-           else if(wF==0)
-           {
-
-            dW=dW+1;
-           }
+}
 
 
-          }
-  
-          cW>uW ? console.log("GAME OVER!!!!I WIN"): console.log("GAME OVER!!!YOU WIN");
-
-          decideWinner(winFactor);
-
-
+return winFactor;
 
 
 }
-}
+
 beginGame();
+
+
