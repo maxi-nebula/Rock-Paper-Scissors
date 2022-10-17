@@ -1,4 +1,6 @@
 const choiceArray=['rock','paper','scissors'];
+
+// chooses a random value from the choice array
 function getComputerChoice(ccA)
 {
 
@@ -10,6 +12,8 @@ const randomItem=ccA[randomIndex];
 return randomItem;
 
 }
+
+//asks the user the enter a choice using a prompt window
 function getUserChoice()
 {
 
@@ -38,8 +42,7 @@ function getUserChoice()
 
 
 
-//const winFactor =playRound(computerChoice,userInput);
-//console.log(winFactor);
+//compares the computer's choice and user's choice and returns either 1,0 or -1
  
 function beginGame()
 {
@@ -81,6 +84,8 @@ function beginGame()
 }
 
     let cW=0;uW=0;dW=0;
+
+    //This is to decide the number of times the loop runs .in this case it is 5. the draw factor is written for game 5.
     for(i=0;i<5;i++)
   
     {
@@ -103,7 +108,7 @@ function beginGame()
         dW=dW+1;
        }
 
-
+//here the winner is decided based on the value of numbers of wins by each side respectively, C for computer,U for user and D as a draw
 function decideWinner(C,U,D)
 {
 
