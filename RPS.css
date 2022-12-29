@@ -1,0 +1,40 @@
+/** @format */
+
+body {
+  margin: 0 px;
+  border: 0 px;
+  background-image: url(./RPS-images/zombie.jpg);
+}
+h1 {
+  text-align: center;
+}
+
+.title_style {
+  color: red;
+  font-weight: 700;
+}
+.main_div {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.rps_element {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+}
+.rps_element_img {
+  height: 100px;
+  width: 100px;
+}
+
+.higlighted_element {
+  cursor: pointer;
+  border: 5px solid red;
+}
