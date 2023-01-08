@@ -38,3 +38,9 @@ h1 {
   cursor: pointer;
   border: 5px solid red;
 }
+.result_display {
+  color: white;
+  font-size: larger;
+  text-align: center;
+  font-weight: 500;
+}
