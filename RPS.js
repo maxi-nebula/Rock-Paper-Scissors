@@ -1,19 +1,5 @@
 /** @format */
 
-//window.addEventListener("mouseover", highlightElement);
-const hoveredItem = document.querySelectorAll(".rps_element");
-
-hoveredItem.forEach((hItem) => {
-  hItem.addEventListener("mouseenter", () =>
-    hItem.classList.add("higlighted_element")
-  );
-  hItem.addEventListener("mouseleave", () =>
-    hItem.classList.remove("higlighted_element")
-  );
-});
-
-//clickedRock.addEventListener("onclick", getUserChoice);
-
 const choiceArray = ["rock", "paper", "scissors"];
 
 // chooses a random value from the choice array
@@ -27,16 +13,18 @@ function getComputerChoice(ccA) {
 
 //asks the user the enter a choice using a prompt window
 function getUserChoice() {
-  //const userChoice = prompt("Please enter your choice");
-  // const convertedUserChoice = userChoice.toLowerCase();
-  /*if (choiceArray.includes(convertedUserChoice)) {
+  const userChoice = prompt("Please enter your choice");
+
+  const convertedUserChoice = userChoice.toLowerCase();
+
+  if (choiceArray.includes(convertedUserChoice)) {
     //console.log(userChoice);
     return convertedUserChoice;
   } else if (convertedUserChoice == "") {
     console.log("please enter a value");
   } else {
     console.log("invalid input");
-  }*/
+  }
 }
 
 //compares the computer's choice and user's choice and returns either 1,0 or -1
@@ -91,6 +79,7 @@ function beginGame() {
       } else if (U > C) {
         console.log("**************CONGRATULATIONS!!YOU BEAT ME**********");
       }
+      return;
     }
   }
 

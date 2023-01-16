@@ -9,6 +9,11 @@ h1 {
   text-align: center;
 }
 
+@font-face {
+  font-family: bloodfont;
+  src: url(./fonts/ZombiesComingGraffiti-4B8vY.ttf);
+}
+
 .title_style {
   color: red;
   font-weight: 700;
@@ -43,4 +48,11 @@ h1 {
   font-size: larger;
   text-align: center;
   font-weight: 500;
+}
+.final_display {
+  color: red;
+  font-family: bloodfont;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
 }
