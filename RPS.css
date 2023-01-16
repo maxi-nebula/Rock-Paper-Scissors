@@ -7,11 +7,13 @@ body {
 }
 h1 {
   text-align: center;
+  font-family: bloodfont;
+  font-size: 60px;
 }
 
 @font-face {
   font-family: bloodfont;
-  src: url(./fonts/ZombiesComingGraffiti-4B8vY.ttf);
+  src: url(./fonts/Bloodsoul-ow5Lq.otf);
 }
 
 .title_style {

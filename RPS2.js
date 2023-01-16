@@ -90,6 +90,7 @@ function finalWinner(D, U, C) {
   } else if (U > C) {
     resultDiv.textContent = `YOU ARE SPARED.RUN AND NEVER COME BACK!!`;
   }
+
   return;
 }
 
