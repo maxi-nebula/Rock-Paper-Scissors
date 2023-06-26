@@ -72,13 +72,19 @@ function getUserChoice(event) {
   } else if (winFactor == 0) {
     dW = dW + 1;
   }
-  if (clickCount == 5) {
+  if (clickCount % 5 == 0) {
     finalWinner(dW, uW, cW);
   }
 }
 
 function finalWinner(D, U, C) {
   const resultDiv = document.createElement("div");
+  /*const addedClass = document.querySelectorAll(".rps_element");
+  console.log(addedClass);*/
+
+  document.querySelectorAll(".rps_element").forEach(function (el) {
+    el.style.display = "none";
+  });
   resultDiv.setAttribute("id", "finalresult");
   resultDiv.classList.add("final_display");
   const finalResult = document.getElementById("main_div");
